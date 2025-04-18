@@ -3,21 +3,21 @@ Esse repositório contem exemplo de como implemantar os principais padrões de p
 
 
 
-Propósito | Escoplo | Name     | Descrição|
----------|----------|----------|----------|
-Criação  |Classe    |Factory Method|
-Criação | Objeto | Abstract Factory |
-Criação | Objeto | Builder |
-Criação | objeto | Prototype |
-Criação | Objeto | Singleton |  
-Estrutural   | Classe   | Adapter (classe)|
-Estrutural   | Objeto   | Adapter (objeto)|
-Estrutural   | Objeto   | Bride |
-Estrutural   | Objeto   | Composite |
-Estrutural   | Objeto   | Decorator |
-Estrutural   | Objeto   | Façade |
-Estrutural   | Objeto   | Flyweight |
-Estrutural   | Objeto   | proxy | 
+Propósito | Escoplo | Name     |Exemplo | Descrição|
+---------|----------|----------|----------|-----------|
+Criação  |Classe    |Factory Method| python | Subclasse de objeto que é instânciada     |
+Criação | Objeto | Abstract Factory | | Famílias de objetos-produto
+Criação | Objeto | Builder | | Como um objeto composto é criado
+Criação | objeto | Prototype | | Classe de objeto que é instanciada
+Criação | Objeto | Singleton | | A Unica instancia de uma classe
+Estrutural   | Classe   | Adapter (classe)| | Interface para um objeto
+Estrutural   | Objeto   | Adapter (objeto)| | Interface para um objeto
+Estrutural   | Objeto   | Bridge | | Inplementação de um objetoo
+Estrutural   | Objeto   | Composite | | Estrutura e composição de um objeto
+Estrutural   | Objeto   | Decorator | | Responsabilidade de um objeto sem usar subclass
+Estrutural   | Objeto   | Façade | Interface para uma subsistema
+Estrutural   | Objeto   | Flyweight | |
+Estrutural   | Objeto   | proxy |
 Comportamental  | Classe | Interpreter|
 Comportamental | Classe | Template Method |
 Comportamental | Objeto | Chain of Responsibility|

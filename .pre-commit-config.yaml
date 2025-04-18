@@ -1,0 +1,78 @@
+---
+repos:
+    # formater files
+    - repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v4.3.0
+      hooks:
+          - id: trailing-whitespace  #  trims trailing whitespace.
+            stages:
+                - commit
+          - id: fix-encoding-pragma  #  'adds # -*- coding: utf-8 -*- to the top of python files.'
+            stages:
+                - commit
+          - id: end-of-file-fixer #ensures that a file is either empty, or ends with one newline.
+            stages:
+                - commit
+          - id: check-json # checks json files for parseable syntax.
+            stages:
+                - commit
+          - id: pretty-format-json # sets a standard for formatting json files.
+            args:
+                - --autofix
+                - --indent=4
+                - --no-sort-keys
+            stages:
+                - commit
+          - id: check-added-large-files # prevents giant files from being committed.
+            stages:
+                - commit
+
+    # format file YAML
+
+    - repo: https://github.com/adrienverge/yamllint.git
+      rev: v1.21.0 # or higher tag
+      hooks:
+          - id: yamllint
+            args: [--format, parsable, --strict]
+            stages:
+                - commit
+
+    - repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
+      rev: 0.2.1 # or other specific tag
+      hooks:
+          - id: yamlfmt
+            stages:
+                - commit
+
+
+    # formater code python PEP8
+    - repo: https://github.com/psf/black
+      rev: 22.10.0
+      hooks:
+          - id: black
+            language_version: python3
+            args: [--line-length=140]
+            stages:
+                - commit
+
+    #remove unused imports
+    - repo: https://github.com/PyCQA/autoflake
+      rev: v1.7.7
+      hooks:
+          - id: autoflake
+            stages:
+                - commit
+
+    # checck code quality (rejects if the score is less than 7.)
+    - repo: local
+      hooks:
+          - id: commitizen
+            name: cz
+            entry: cz check
+            language: python
+            args: [--allow-abort, --commit-msg-file]
+            language_version: python3
+            minimum_pre_commit_version: 1.4.3
+            types: [python]
+            stages:
+                - commit-msg
