@@ -1,27 +1,28 @@
 # -*- coding: utf-8 -*-
 from abc import ABC, abstractmethod
+import platform
 
 
 class GuiFactory(ABC):
     @abstractmethod
     def create_button(self):
-        pass
+        raise NotImplementedError("You should implement this method")
 
     @abstractmethod
     def create_label(self):
-        pass
+        raise NotImplementedError("You should implement this method")
 
 
 class AbstractButton(ABC):
     @abstractmethod
     def draw(self):
-        pass
+        raise NotImplementedError("You should implement this method")
 
 
 class AbstractLabel(ABC):
     @abstractmethod
     def draw(self):
-        pass
+        raise NotImplementedError("You should implement this method")
 
 
 class WindowsButton(AbstractButton):
@@ -60,6 +61,16 @@ class LinuxFactory(GuiFactory):
         return LinuxLabel()
 
 
+def get_factory() -> GuiFactory:
+    os = platform.system().lower()
+    if os == "windows":
+        return WindowsFactory()
+    elif os == "linux":
+        return LinuxFactory()
+    else:
+        raise ValueError("Unknown OS type")
+
+
 if __name__ == "__main__":
     factory: GuiFactory = WindowsFactory()
     button: AbstractButton = factory.create_button()
@@ -68,6 +79,12 @@ if __name__ == "__main__":
     label.draw()
 
     factory: GuiFactory = LinuxFactory()
+    button: AbstractButton = factory.create_button()
+    label: AbstractLabel = factory.create_label()
+    button.draw()
+    label.draw()
+
+    factory: GuiFactory = get_factory()
     button: AbstractButton = factory.create_button()
     label: AbstractLabel = factory.create_label()
     button.draw()

@@ -1,54 +1,80 @@
 # -*- coding: utf-8 -*-
+
 from abc import ABC, abstractmethod
 
 
-class Builder(ABC):
-    @abstractmethod
-    def reset(self):
-        raise NotImplementedError
-
-    @abstractmethod
-    def set_color(self, color: str):
-        raise NotImplementedError
-
-    @abstractmethod
-    def set_engine(self, engine: str):
-        raise NotImplementedError
-
-
-class Diretor:
-    def make_uno(self, buider: Builder):
-        buider.reset()
-        buider.set_color("verde")
-        buider.set_engine("flex")
-
-    def make_carretao(self, buider: Builder):
-        buider.reset()
-        buider.set_color("amarelo")
-        buider.set_engine("disel")
-
-
-class CarBuilder(Builder):
+class Dialog:
     def __init__(self):
-        self.color = None
-        self.engine = None
+        self.title = None
+        self.button = None
+        self.label = None
 
-    def reset(self):
-        self.color = None
-        self.engine = None
+    def show(self):
+        print(f"Dialog Title: {self.title}")
+        if self.label:
+            self.label.draw()
+        if self.button:
+            self.button.draw()
 
-    def set_color(self, color):
-        self.color = color
 
-    def set_engine(self, engine):
-        self.engine = engine
+class DialogBuilder(ABC):
+    @abstractmethod
+    def build_title(self):
+        pass
+
+    @abstractmethod
+    def build_button(self):
+        pass
+
+    @abstractmethod
+    def build_label(self):
+        pass
+
+    @abstractmethod
+    def get_result(self) -> Dialog:
+        pass
+
+
+class LinuxButton:
+    def draw(self):
+        print("Linux Button")
+
+
+class LinuxLabel:
+    def draw(self):
+        print("Linux Label")
+
+
+class LinuxDialogBuilder(DialogBuilder):
+    def __init__(self):
+        self.dialog = Dialog()
+
+    def build_title(self):
+        self.dialog.title = "Linux Dialog"
+
+    def build_button(self):
+        self.dialog.button = LinuxButton()
+
+    def build_label(self):
+        self.dialog.label = LinuxLabel()
 
     def get_result(self):
-        return f"Color: {self.color}, Engine: {self.engine}"
+        return self.dialog
+
+
+class DialogDirector:
+    def __init__(self, builder: DialogBuilder):
+        self.builder = builder
+
+    def construct(self):
+        self.builder.build_title()
+        self.builder.build_label()
+        self.builder.build_button()
+        return self.builder.get_result()
 
 
 if __name__ == "__main__":
-    car_builder = CarBuilder()
-    diretor = Diretor()
-    diretor.make_uno(car_builder)
-    print(car_builder.get_result())
+    builder = LinuxDialogBuilder()
+    director = DialogDirector(builder)
+    dialog = director.construct()
+    dialog.show()
