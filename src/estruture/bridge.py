@@ -31,5 +31,5 @@ class Janela:
 win = Janela(JanelaWindows())
 win.desenhar("Configurações")
 
-linux = Janela(JanelaLinux())
+linux = JanelaLinux()
 linux.desenhar("Preferências")
