@@ -1,19 +1,36 @@
 # -*- coding: utf-8 -*-
+"""""
+Quando usar:
+Você precisa adicionar novas operações frequentemente.
+
+Você quer manter separados os dados e as operações.
+
+A estrutura de classes é estável, mas as operações mudam muito.
+
+Quando evitar:
+Se o conjunto de classes muda com frequência (porque o Visitor depende fortemente desses tipos).
+
+Se há poucas operações diferentes (a complexidade pode não valer a pena).""" ""
+
 from typing import List
+from abc import ABC, abstractmethod
 
 
-class GuiVisitor:
+class GuiVisitor(ABC):
+    @abstractmethod
     def visit_button(self, button: "Button") -> None:
         raise NotImplementedError
 
+    @abstractmethod
     def visit_label(self, label: "Label") -> None:
         raise NotImplementedError
 
+    @abstractmethod
     def visit_textfield(self, textfield: "TextField") -> None:
         raise NotImplementedError
 
 
-class GuiElement:
+class GuiElement(ABC):
     def accept(self, visitor: GuiVisitor) -> None:
         raise NotImplementedError
 
