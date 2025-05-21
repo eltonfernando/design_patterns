@@ -8,7 +8,7 @@ Esse repositório contém exemplos de como implementar os principais padrões de
 
 | Propósito     | Escopo  | Name                  | Python | C++  | Descrição                                      |
 |--------------|---------|-----------------------|--------|------|------------------------------------------------|
-| Criação      | Classe  | Factory Method        | ✅     | ❌   | Subclasse de objeto que é instanciada          |
+| Criação      | Classe  | Factory Method        | ✅     | ✅   | Subclasse de objeto que é instanciada          |
 | Criação      | Objeto  | Abstract Factory      | ✅     | ✅   | Famílias de objetos-produto                      |
 | Criação      | Objeto  | Builder               | ✅     | ✅  | Como um objeto complexo é criado                 |
 | Criação      | Objeto  | Prototype             | ✅     | ❌   | Clona objetos para criação rápida                |

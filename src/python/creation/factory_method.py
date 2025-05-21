@@ -28,7 +28,7 @@ class Dialog(ABC):
         pass
 
 
-class DialogLinux(Dialog):
+class LinuxDialog(Dialog):
     def render(self):
         print("DialogLinx render")
 
@@ -36,7 +36,7 @@ class DialogLinux(Dialog):
         return LinxButton()
 
 
-class DialogWin10(Dialog):
+class Win10Dialog(Dialog):
     def render(self):
         print("DialogWin10 render")
 
@@ -45,7 +45,7 @@ class DialogWin10(Dialog):
 
 
 if __name__ == "__main__":
-    dialog = DialogLinux()
+    dialog = LinuxDialog()
     dialog.render()
     button = dialog.create_button()
     button.draw()
