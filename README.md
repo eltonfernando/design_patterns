@@ -10,7 +10,7 @@ Esse repositório contém exemplos de como implementar os principais padrões de
 |--------------|---------|-----------------------|--------|------|------------------------------------------------|
 | Criação      | Classe  | Factory Method        | ✅     | ❌   | Subclasse de objeto que é instanciada          |
 | Criação      | Objeto  | Abstract Factory      | ✅     | ✅   | Famílias de objetos-produto                      |
-| Criação      | Objeto  | Builder               | ✅     | ❌   | Como um objeto complexo é criado                 |
+| Criação      | Objeto  | Builder               | ✅     | ✅  | Como um objeto complexo é criado                 |
 | Criação      | Objeto  | Prototype             | ✅     | ❌   | Clona objetos para criação rápida                |
 | Criação      | Objeto  | Singleton             | ✅     | ❌   | Garante única instância de uma classe            |
 | Estrutural   | Classe  | Adapter               | ✅     | ❌   | Adapta interface de uma classe                    |

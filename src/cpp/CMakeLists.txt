@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Adiciona subdiretórios
 add_subdirectory(creation/abstract_factory)
+add_subdirectory(creation/builder)
 
 # Se quiser adicionar os outros futuramente:
 # add_subdirectory(estructure/...)
