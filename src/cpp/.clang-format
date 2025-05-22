@@ -1,0 +1,29 @@
+---
+# Google C++ Style Guide
+Language: Cpp
+BasedOnStyle: Google
+
+# Indentação
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+
+# Alinhamento
+AlignConsecutiveAssignments: Consecutive
+AlignConsecutiveBitFields: Enabled
+AlignConsecutiveDeclarations: Consecutive
+AlignConsecutiveMacros: Enabled
+AlignEscapedNewlines: Right
+
+# Quebra de linha
+BreakBeforeBraces: Attach
+ColumnLimit: 100
+
+# Outros
+Standard: c++17
+PointerAlignment: Left
+SpaceBeforeParens: ControlStatements
+
+# Ordenação de includes
+SortIncludes: CaseSensitive
+IncludeBlocks: Preserve

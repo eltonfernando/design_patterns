@@ -1,11 +1,13 @@
 
-#include "LinuxDialog.hpp"
 #include <iostream>
+#include <memory>
 
-int main(){
-    LinuxDialog dialog;
-    dialog.render();
-    std::unique_ptr<IButton> button = dialog.createButton();
-    button->draw();
-    return 0;
+#include "LinuxDialog.hpp"
+
+int main() {
+  LinuxDialog dialog;
+  dialog.render();
+  std::unique_ptr<IButton> button = dialog.createButton();
+  button->draw();
+  return 0;
 }

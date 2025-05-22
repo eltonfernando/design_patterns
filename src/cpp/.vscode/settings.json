@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "*.py": "python",
+        "memory_resource": "cpp",
+        "memory": "cpp"
+    }
+}

@@ -1,0 +1,29 @@
+---
+# Configurações globais do clang-tidy
+Checks: >
+  *,
+  -modernize-use-trailing-return-type,
+  -cppcoreguidelines-avoid-magic-numbers,
+  -readability-magic-numbers,
+  -fuchsia-*,
+  -llvm-*,
+  -google-*,
+  -zircon-*,
+  -abseil-*,
+  -objc-*
+
+# Configurações de cabeçalhos e includes
+HeaderFilterRegex: '.*'
+
+CheckOptions:
+  - key: headers.FileExtensions
+    value: 'h,hh,hpp,hxx'
+  
+  # Configurar paths de include
+  - key: HeaderIncludes.IncludePaths
+    value: |
+      ./src
+      ./include
+      /usr/include/c++/11
+# Opções específicas
+InheritParentConfig: false

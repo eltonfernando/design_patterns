@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_subdirectory(creation/abstract_factory)
 add_subdirectory(creation/builder)
 add_subdirectory(creation/factory_method)
+add_subdirectory(creation/prototype)
 
-# Se quiser adicionar os outros futuramente:
-# add_subdirectory(estructure/...)
+# Se quiser adicionar os outros futuramente: add_subdirectory(estructure/...)
 # add_subdirectory(comportamentais/...)

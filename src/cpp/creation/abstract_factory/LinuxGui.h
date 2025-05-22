@@ -2,17 +2,17 @@
 #include "GuiFactory.h"
 
 class LinuxButton : public AbstractButton {
-public:
-    void draw() override;
+ public:
+  void draw() override;
 };
 
 class LinuxLabel : public AbstractLabel {
-public:
-    void draw() override;
+ public:
+  void draw() override;
 };
 
 class LinuxFactory : public GuiFactory {
-public:
-    AbstractButton* createButton() override;
-    AbstractLabel* createLabel() override;
+ public:
+  AbstractButton* createButton() override;
+  AbstractLabel* createLabel() override;
 };
