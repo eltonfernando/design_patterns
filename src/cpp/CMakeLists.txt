@@ -10,5 +10,7 @@ add_subdirectory(creation/builder)
 add_subdirectory(creation/factory_method)
 add_subdirectory(creation/prototype)
 
+add_subdirectory(estructure/adapter)
+
 # Se quiser adicionar os outros futuramente: add_subdirectory(estructure/...)
 # add_subdirectory(comportamentais/...)
