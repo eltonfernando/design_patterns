@@ -1,4 +1,4 @@
-
+#include <memory>
 class IButton {
  public:
   virtual void draw() const = 0;
@@ -21,9 +21,9 @@ class LegacyButton : public IButton {
 
 class LegacyButtonAdapter : public IButton {
  public:
-  LegacyButtonAdapter(LegacyButton* button);
+  explicit LegacyButtonAdapter(std::unique_ptr<LegacyButton> button);
   void draw() const;
 
  private:
-  LegacyButton* button_;
+  std::unique_ptr<LegacyButton> button_;
 };
