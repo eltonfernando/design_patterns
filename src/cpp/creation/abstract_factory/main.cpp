@@ -1,9 +1,9 @@
 #include <iostream>
 #include <memory>
 
-#include "GuiFactory.h"
-#include "LinuxGui.h"
-#include "WindowsGui.h"
+#include "GuiFactory.hpp"
+#include "LinuxGui.hpp"
+#include "WindowsGui.hpp"
 
 #ifdef _WIN32
 #define CURRENT_OS "windows"

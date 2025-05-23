@@ -1,5 +1,5 @@
 #pragma once
-#include "GuiFactory.h"
+#include "GuiFactory.hpp"
 
 class LinuxButton : public AbstractButton {
  public:

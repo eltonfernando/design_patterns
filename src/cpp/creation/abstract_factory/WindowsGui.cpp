@@ -1,4 +1,4 @@
-#include "WindowsGui.h"
+#include "WindowsGui.hpp"
 
 #include <iostream>
 

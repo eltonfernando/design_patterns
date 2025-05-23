@@ -1,4 +1,4 @@
-#include "LinuxGui.h"
+#include "LinuxGui.hpp"
 
 #include <iostream>
 
