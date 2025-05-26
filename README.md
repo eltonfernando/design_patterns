@@ -13,8 +13,7 @@ Esse repositório contém exemplos de como implementar os principais padrões de
 | Criação      | Objeto  | Builder               | ✅     | ✅  | Como um objeto complexo é criado                 |
 | Criação      | Objeto  | Prototype             | ✅     | ❌   | Clona objetos para criação rápida                |
 | Criação      | Objeto  | Singleton             | ✅     | ❌   | Garante única instância de uma classe            |
-| Estrutural   | Classe  | Adapter               | ✅     | ❌   | Adapta interface de uma classe                    |
-| Estrutural   | Objeto  | Adapter               | ✅     | ❌   | Adapta interface de um objeto                     |
+| Estrutural   | Classe  | Adapter               | ✅     | ✅   | Adapta interface de uma classe                    |
 | Estrutural   | Objeto  | Bridge                | ✅     | ❌   | Separa abstração da implementação                 |
 | Estrutural   | Objeto  | Composite             | ✅     | ❌   | Composição em árvore de objetos                   |
 | Estrutural   | Objeto  | Decorator             | ✅     | ❌   | Adiciona responsabilidades dinamicamente          |
