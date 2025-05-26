@@ -15,7 +15,7 @@ Esse repositório contém exemplos de como implementar os principais padrões de
 | Criação      | Objeto  | Singleton             | ✅     | ❌   | Garante única instância de uma classe            |
 | Estrutural   | Classe  | Adapter               | ✅     | ✅   | Adapta interface de uma classe                    |
 | Estrutural   | Objeto  | Bridge                | ✅     | ❌   | Separa abstração da implementação                 |
-| Estrutural   | Objeto  | Composite             | ✅     | ❌   | Composição em árvore de objetos                   |
+| Estrutural   | Objeto  | Composite             | ✅     | ✅   | Composição em árvore de objetos                   |
 | Estrutural   | Objeto  | Decorator             | ✅     | ❌   | Adiciona responsabilidades dinamicamente          |
 | Estrutural   | Objeto  | Façade                | ✅     | ❌   | Interface simplificada para subsistema             |
 | Estrutural   | Objeto  | Flyweight             | ✅     | ❌   | Compartilha objetos para otimizar memória           |

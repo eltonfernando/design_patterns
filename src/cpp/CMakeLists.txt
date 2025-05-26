@@ -13,6 +13,7 @@ add_subdirectory(creation/prototype)
 
 add_subdirectory(estructure/adapter)
 add_subdirectory(estructure/bridge)
+add_subdirectory(estructure/compose)
 
 # Se quiser adicionar os outros futuramente: add_subdirectory(estructure/...)
 # add_subdirectory(comportamentais/...)
