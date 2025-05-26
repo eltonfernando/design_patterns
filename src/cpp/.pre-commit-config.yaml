@@ -6,7 +6,7 @@ repos:
       - id: clang-format
         stages: [commit]
         types_or: [c++]
-        args: [--style=Google, -i]  # Estilo Google, formata no lugar
+        args: [--style=InheritParentConfig, -i]  # Estilo Google, formata no lugar
 
   # Linter - clang-tidy
   - repo: https://github.com/pocc/pre-commit-hooks
@@ -14,7 +14,9 @@ repos:
     hooks:
       - id: clang-tidy
         args: [-p=build]
+        stages: [push]
         types_or: [c++]
+        always_run: false
         # Remova additional_dependencies
 
   # Verificador de formatação CMake

@@ -1,4 +1,5 @@
 #include <iostream>
+
 #include "Bridge.hpp"
 int main() {
     Janela janela(std::make_unique<JanelaLinux>());

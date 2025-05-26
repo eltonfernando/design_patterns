@@ -1,4 +1,5 @@
 #include "Bridge.hpp"
+
 #include <iostream>
 
 void JanelaWindows::desenhar() {
@@ -9,9 +10,7 @@ void JanelaLinux::desenhar() {
     std::cout << "Desenhando Janela Linux" << std::endl;
 }
 
-Janela::Janela(std::unique_ptr<IJanela> janela): janela_(std::move(janela)) {
-
-}
+Janela::Janela(std::unique_ptr<IJanela> janela) : janela_(std::move(janela)) {}
 
 void Janela::desenhar() const {
     janela_->desenhar();

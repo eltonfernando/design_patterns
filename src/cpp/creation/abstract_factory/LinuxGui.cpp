@@ -2,10 +2,18 @@
 
 #include <iostream>
 
-void LinuxButton::draw() { std::cout << "Linux Button\n"; }
+void LinuxButton::draw() {
+    std::cout << "Linux Button\n";
+}
 
-void LinuxLabel::draw() { std::cout << "Linux Label\n"; }
+void LinuxLabel::draw() {
+    std::cout << "Linux Label\n";
+}
 
-AbstractButton *LinuxFactory::createButton() { return new LinuxButton(); }
+AbstractButton* LinuxFactory::createButton() {
+    return new LinuxButton();
+}
 
-AbstractLabel *LinuxFactory::createLabel() { return new LinuxLabel(); }
+AbstractLabel* LinuxFactory::createLabel() {
+    return new LinuxLabel();
+}
