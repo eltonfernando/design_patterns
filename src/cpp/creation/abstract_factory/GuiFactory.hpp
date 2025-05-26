@@ -14,7 +14,7 @@ class AbstractLabel {
 
 class GuiFactory {
  public:
-  virtual AbstractButton* createButton() = 0;
-  virtual AbstractLabel* createLabel() = 0;
+  virtual AbstractButton *createButton() = 0;
+  virtual AbstractLabel *createLabel() = 0;
   virtual ~GuiFactory() = default;
 };

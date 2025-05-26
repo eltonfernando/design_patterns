@@ -3,9 +3,9 @@
 
 class DialogDirector {
  public:
-  DialogDirector(DialogBuilder* builder);
+  DialogDirector(DialogBuilder *builder);
   std::unique_ptr<Dialog> construct();
 
  private:
-  DialogBuilder* builder_;
+  DialogBuilder *builder_;
 };

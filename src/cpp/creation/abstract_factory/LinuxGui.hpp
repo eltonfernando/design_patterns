@@ -13,6 +13,6 @@ class LinuxLabel : public AbstractLabel {
 
 class LinuxFactory : public GuiFactory {
  public:
-  AbstractButton* createButton() override;
-  AbstractLabel* createLabel() override;
+  AbstractButton *createButton() override;
+  AbstractLabel *createLabel() override;
 };

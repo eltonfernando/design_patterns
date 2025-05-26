@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-void Dialog::setTitle(const std::string& title) { title_ = title; }
+void Dialog::setTitle(const std::string &title) { title_ = title; }
 
 void Dialog::setButton(std::unique_ptr<IButton> btn) {
   button_ = std::move(btn);

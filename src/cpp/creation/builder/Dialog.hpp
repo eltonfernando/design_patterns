@@ -16,7 +16,7 @@ class ILabel {
 
 class Dialog {
  public:
-  void setTitle(const std::string& title);
+  void setTitle(const std::string &title);
   void setButton(std::unique_ptr<IButton> btn);
   void setLabel(std::unique_ptr<ILabel> lbl);
   void show() const;

@@ -13,6 +13,6 @@ class WindowsLabel : public AbstractLabel {
 
 class WindowsFactory : public GuiFactory {
  public:
-  AbstractButton* createButton() override;
-  AbstractLabel* createLabel() override;
+  AbstractButton *createButton() override;
+  AbstractLabel *createLabel() override;
 };

@@ -2,7 +2,7 @@
 
 #include <memory>
 
-DialogDirector::DialogDirector(DialogBuilder* builder) : builder_(builder) {}
+DialogDirector::DialogDirector(DialogBuilder *builder) : builder_(builder) {}
 
 std::unique_ptr<Dialog> DialogDirector::construct() {
   builder_->buildTitle();
