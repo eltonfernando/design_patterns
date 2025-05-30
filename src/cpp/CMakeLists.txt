@@ -16,6 +16,7 @@ add_subdirectory(estructure/bridge)
 add_subdirectory(estructure/compose)
 add_subdirectory(estructure/decoretor)
 add_subdirectory(estructure/facade)
+add_subdirectory(estructure/flyweight)
 
 # Se quiser adicionar os outros futuramente: add_subdirectory(estructure/...)
 # add_subdirectory(comportamentais/...)
