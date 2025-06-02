@@ -19,7 +19,7 @@ Esse repositório contém exemplos de como implementar os principais padrões de
 | Estrutural   | Objeto  | Decorator             | ✅     | ✅   | Adiciona responsabilidades dinamicamente          |
 | Estrutural   | Objeto  | Façade                | ✅     | ✅   | Interface simplificada para subsistema             |
 | Estrutural   | Objeto  | Flyweight             | ✅     | ✅   | Compartilha objetos para otimizar memória           |
-| Estrutural   | Objeto  | Proxy                 | ✅     | ❌   | Controla acesso a outro objeto                      |
+| Estrutural   | Objeto  | Proxy                 | ✅     | ✅   | Controla acesso a outro objeto                      |
 | Comportamental | Classe | Interpreter           | ✅     | ❌   | Avalia linguagem definida por gramática              |
 | Comportamental | Classe | Template Method       | ✅     | ❌   | Define esqueleto de algoritmo em método base          |
 | Comportamental | Objeto | Chain of Responsibility| ✅     | ❌   | Encadeia objetos para tratar requisições             |
