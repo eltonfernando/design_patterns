@@ -2,19 +2,22 @@
 
 #include <memory>
 class GUIComponent {
-public:
+   public:
     explicit GUIComponent(std::shared_ptr<GUIComponent> parent = nullptr);
-    virtual ~GUIComponent()=default;
+    virtual ~GUIComponent() = default;
     virtual void handleClick(int x, int y);
-protected:
+
+   protected:
     std::shared_ptr<GUIComponent> parent_;
 };
 
 class Button : public GUIComponent {
-public:
-    explicit Button(int x, int y, int width, int height, std::shared_ptr<GUIComponent> parent = nullptr);
+   public:
+    explicit Button(int x, int y, int width, int height,
+                    std::shared_ptr<GUIComponent> parent = nullptr);
     void handleClick(int x, int y) override;
-private:
+
+   private:
     int x_;
     int y_;
     int width_;
@@ -22,13 +25,13 @@ private:
 };
 
 class Panel : public GUIComponent {
-public:
+   public:
     explicit Panel(std::shared_ptr<GUIComponent> parent = nullptr);
     void handleClick(int x, int y) override;
 };
 
 class Window : public GUIComponent {
-public:
+   public:
     explicit Window(std::shared_ptr<GUIComponent> parent = nullptr);
     void handleClick(int x, int y) override;
 };
