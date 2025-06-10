@@ -1,5 +1,6 @@
-#include "Flyweight.hpp"
 #include <iostream>
+
+#include "Flyweight.hpp"
 int main() {
     std::cout << "Flyweight" << std::endl;
     Factory fabrica;

@@ -1,12 +1,13 @@
 // Flyweight.cpp
 #include "Flyweight.hpp"
+
 #include <iostream>
 
 BtnFlyweight::BtnFlyweight(const std::string& color) : color_(color) {}
 
 void BtnFlyweight::draw(const std::string& label, int x, int y) const {
-    std::cout << "Desenhando '" << label << "' em (" << x << "," << y
-              << ") com cor " << color_ << std::endl;
+    std::cout << "Desenhando '" << label << "' em (" << x << "," << y << ") com cor " << color_
+              << std::endl;
 }
 
 const std::string& BtnFlyweight::color() const {

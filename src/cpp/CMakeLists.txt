@@ -19,5 +19,7 @@ add_subdirectory(estructure/facade)
 add_subdirectory(estructure/flyweight)
 add_subdirectory(estructure/proxy)
 
+add_subdirectory(comportamentais)
+
 # Se quiser adicionar os outros futuramente: add_subdirectory(estructure/...)
 # add_subdirectory(comportamentais/...)

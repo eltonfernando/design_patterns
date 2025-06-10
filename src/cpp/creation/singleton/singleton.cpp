@@ -1,4 +1,5 @@
 #include "Singleton.hpp"
+
 #include <iostream>
 
 Singleton::Singleton() {

@@ -10,7 +10,6 @@ void ImagemReal::exibir() {
 
 ImagemProxy::ImagemProxy(const std::string& nome) : nome_(nome) {}
 
-
 void ImagemProxy::exibir() {
     if (!imagem_) {
         imagem_ = std::make_unique<ImagemReal>(nome_);

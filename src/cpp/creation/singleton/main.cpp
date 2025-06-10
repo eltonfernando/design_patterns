@@ -2,7 +2,7 @@
 
 #include "Singleton.hpp"
 
-int main(   ) {
+int main() {
     std::cout << "singleton" << std::endl;
     Singleton::getInstance().execute();
     return 0;

@@ -22,8 +22,8 @@ Esse repositório contém exemplos de como implementar os principais padrões de
 | Estrutural   | Objeto  | Proxy                 | ✅     | ✅   | Controla acesso a outro objeto                      |
 | Comportamental | Classe | Interpreter           | ✅     | ❌   | Avalia linguagem definida por gramática              |
 | Comportamental | Classe | Template Method       | ✅     | ❌   | Define esqueleto de algoritmo em método base          |
-| Comportamental | Objeto | Chain of Responsibility| ✅     | ❌   | Encadeia objetos para tratar requisições             |
-| Comportamental | Objeto | Command               | ✅     | ❌   | Encapsula solicitação como objeto                      |
+| Comportamental | Objeto | Chain of Responsibility| ✅     | ✅   | Encadeia objetos para tratar requisições             |
+| Comportamental | Objeto | Command               | ✅     | ✅   | Encapsula solicitação como objeto                      |
 | Comportamental | Objeto | Iterator              | ✅     | ❌   | Permite acessar elementos de coleção sequencialmente  |
 | Comportamental | Objeto | Mediator              | ✅     | ❌   | Centraliza comunicação entre objetos                  |
 | Comportamental | Objeto | Memento               | ✅     | ❌   | Salva e restaura estado de objeto                      |
