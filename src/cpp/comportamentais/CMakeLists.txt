@@ -1,3 +1,4 @@
 add_subdirectory(command)
 add_subdirectory(chain_of_responsibility)
 add_subdirectory(interprete)
+add_subdirectory(mediator)
