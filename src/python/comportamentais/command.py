@@ -1,19 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-O padrão Interpreter é usado quando:
 
-🔹 Você tem uma linguagem própria (DSL) simples que precisa ser interpretada.
-🔹 Precisa avaliar expressões ou comandos frequentemente.
-🔹 A gramática é relativamente simples e estável.
-
-Exemplos típicos:
-Avaliação de expressões matemáticas ou lógicas.
-
-Configuração de UIs (como no exemplo).
-
-Comandos em jogos (ex: "mover para norte").
-
-Linguagens de consulta simples (ex: filtros, buscas).
 """
 
 

@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# usado para parse de expressões
 from abc import ABC, abstractmethod
 from typing import List, Tuple
 
