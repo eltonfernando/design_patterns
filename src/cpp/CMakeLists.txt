@@ -10,6 +10,7 @@ add_subdirectory(creation/abstract_factory)
 add_subdirectory(creation/builder)
 add_subdirectory(creation/factory_method)
 add_subdirectory(creation/prototype)
+add_subdirectory(creation/singleton)
 
 add_subdirectory(estructure/adapter)
 add_subdirectory(estructure/bridge)

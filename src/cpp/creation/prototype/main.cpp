@@ -3,12 +3,12 @@
 #include "Car.hpp"
 
 int main() {
-    auto prototypeCar = std::make_unique<Car>("Sedan", "Preto", 2022);
+    std::unique_ptr<Car> prototypeCar = std::make_unique<Car>("Sedan", "Preto", 2022);
 
-    auto car1 = prototypeCar->clone();
+    std::unique_ptr<Car> car1 = prototypeCar->clone();
     car1->setColor("Vermelho");
 
-    auto car2 = prototypeCar->clone();
+    std::unique_ptr<Car> car2 = prototypeCar->clone();
     car2->setYear(2023);
 
     std::cout << "Carro 1: " << car1->toString() << std::endl;
